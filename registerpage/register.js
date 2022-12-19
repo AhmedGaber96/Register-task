@@ -121,7 +121,7 @@ creat.addEventListener('click',function(e){
     e.preventDefault()
     if(checkAll()==true){
         document.querySelector('.checkRequirements').style.display='none'
-        ahmed()
+        sendUserData ()
 
     
 
@@ -133,7 +133,7 @@ creat.addEventListener('click',function(e){
 })
 
 
-async function ahmed (){
+async function sendUserData (){
     let userInfo= {
         email:userMail.value,
         username:nameOfuser.value,
