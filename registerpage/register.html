@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <link rel="stylesheet" href="../Abdoullah Ashgar EL-kharef Regular.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&family=Dancing+Script&family=Montserrat+Alternates&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,800&family=Mulish:ital@0;1&family=Roboto+Serif:opsz,wght@8..144,400;8..144,800&family=Roboto:ital@1&family=Source+Sans+Pro&family=Source+Serif+Pro&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-lay-out">
+        <div class="register">
+            <div class="image-palceholder">
+            </div>
+            <div class="register-main" id="mainRegister">
+                <div class="head-subhead">
+                    <div class="headline">
+                        <p>Create Account</p>
+                    </div>
+                    <div class="subhead">
+                        <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                    </div>
+                </div>
+                <form onsubmit="event.preventDefault()">
+                    <div class="frame-container">
+                        <div class="frame ">
+                            <div class="icon">
+                                
+                                   <img src="../img/User.svg" alt="">
+                             
+                                <div class="driver">
+                                    
+                                </div>
+                            
+        
+                            </div>
+                            <input type="tet" placeholder="Username"  name='username' id='nameOfuser'>
+                            
+                         </div>
+                         <p class="nameError">User name is not valid ex : ahmed0osama </p>
+
+                         <div class="frame ">
+                            <div class="icon">
+                                <img src="../img/EnvelopeSimple.svg" alt="">
+                                <div class="driver"></div>
+                                
+                            </div>
+                            <input type="email" placeholder="Email"  name='email' id='userMail'>
+                         </div>
+                         <p class="emailError">Email is not valid ex : ahmed@gmail.com</p>
+                         <div class="frame">
+                            <div class="icon">
+                                <img src="../img/LockKey.svg" alt="">
+                                <div class="driver"></div>
+                            </div>
+                            <input type="password" placeholder="Password"  name='password' id='Password'>
+                         </div>
+                         <p class="passwordError">Password must be at least 8 characters</p>
+                         <div class="frame">
+                            <div class="icon">
+                                <img src="../img/LockKey.svg" alt="">
+                                <div class="driver"></div>
+                                
+                            </div>
+                            <input type="password" placeholder="Confirm password"  name='password_confirmation' id='passwordConfirmation'>
+        
+                         </div>
+                         
+                         <p class="passwordConfirmError">confirm password not matching</p>
+
+                    </div>
+                 
+                 <button class="create-account" id="creat" type="submit"><span class="button-text">Create Account</span></button>
+                 <p class="checkRequirements">Check All requirements</p>
+               
+
+
+
+                </form>
+                
+                
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

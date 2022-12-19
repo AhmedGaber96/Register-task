@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .succeed-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 10px;
+    position: relative;
+    width: 1280px;
+    height: 976px;;
+  }
+  .succeed-layout::after {
+    content: "";
+    z-index: -1;
+    background-image: url(../img/image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 60%;
+  }
+
+  .login-box{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 60px;
+gap: 60px;
+width: 1080px;
+height: 576px;
+background: rgba(245, 247, 255, 0.85);
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+
+  .image-placeholder{
+    width: 450px;
+height: 456px;
+background: url(../img/succeed.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+border-radius: 10px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+  }
+
+.successfully-container{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+width: 450px;
+height: 96px;
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+.head-subhead{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+width: 450px;
+height: 96px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.head{
+  width: 450px;
+height: 50px;
+font-family: 'Abdoullah Ashgar EL-kharef';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 120%;
+color: #2D2D2D;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.subhead{
+  width: 450px;
+height: 26px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+text-decoration-line: underline;
+color: #1F1249;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+cursor: pointer;
+
+}
+.space{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+width: 315px;
+height: 60px;
+flex: none;
+order: 1;
+flex-grow: 0;
+display: none;
+}
+
+/* m e d i a   q u e r y     o f    s u c c e e d       s e c t i o n */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .succeed-layout{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+position: relative;
+width: 375px;
+height: 733px;
+  }
+  .login-box{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 26.5px;
+gap: 40px;
+width: 375px;
+height: 733px;
+background: rgba(245, 247, 255, 0.85);
+border-radius: 10px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+  }
+
+  .image-placeholder{
+    width:  322px;
+height: 315px;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .successfully-container{
+    width: 315px;
+    order: 2;
+
+  }
+  .head-subhead{
+    width:  315px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+order: 0;
+
+
+  }
+  .head{
+    width: 315px;
+height: 38px;
+font-family: 'Abdoullah Ashgar EL-kharef';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+color: #2D2D2D;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+  .subhead{
+    width: 315px;
+height: 26px;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+text-align: center;
+color: #1F1249;
+flex: none;
+order: 3;
+flex-grow: 0;
+cursor: pointer;
+
+  }
+
+}
+
+
+

@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.home {
+    width: 1280px;
+    height: 538px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 10px;
+}
+
+.home::after {
+    content: "";
+    z-index: -1;
+    background-image: url(img/image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 60%;
+}
+
+.home-container {
+    width: 1080px;
+    height: 435px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 60px;
+    gap: 60px;
+    background-color: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    border: solid transparent;
+}
+
+.home-image {
+    width: 450px;
+    height: 315px;
+    order: 0;
+    /* flex-grow: 1; */
+    border: solid transparent;
+    border-radius: 10px;
+    background-image: url(img/Image\ Placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-head {
+    width: 450px;
+    height: 225px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.head-subhead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 450px;
+    height: 125px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.headline {
+    width: 315px;
+    height: 67px;
+    font-family: 'Abdoullah Ashgar EL-kharef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    color: #2D2D2D;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+  
+}
+.subhead{
+width: 450px;
+height: 38px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 160%;
+color: #1F1249;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+.main-button{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+width: 450px;
+height: 60px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+.get-started{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 50px;
+gap: 12px;
+width: 450px;
+height: 60px;
+background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+box-shadow: 0px 6px 18px #9CADF2;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 1;
+border: none;
+cursor: pointer;
+}
+.button-text{
+width: 89px;
+height: 22px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+/* m e d i a   q u e r y     o f    w e l c o m e      s e c t i o n */
+@media screen and (min-width:320px) and (max-width:480px)
+{
+.home{
+padding: 0px;
+gap: 10px;
+position: relative;
+width: 375px;
+height: 647px;
+
+    }
+.home-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 0px;
+gap: 40px;
+width: 375px;
+height: 647px;
+background: rgba(245, 247, 255, 0.85);
+border-radius: 10px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+}
+.home-image{
+    width: 315px;
+height: 315px;
+background-image: url(img/Image\ Placeholder1.png);
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.welcome-head{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+width: 315px;
+height: 212px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.head-subhead{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+width: 315px;
+height: 112px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.headline {
+    width: 315px;
+    height: 50px;
+    font-family: 'Abdoullah Ashgar EL-kharef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.subhead{
+    width: 315px;
+height: 52px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+text-align: center;
+color: #1F1249;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.main-button{
+padding: 0px;
+gap: 20px;
+width: 315px;
+height: 60px;
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.get-started{
+width: 315px;
+height: 60px;
+background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+box-shadow: 0px 6px 18px #9CADF2;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.button-text {
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+}
+}
+
+
+/*   end of home      */
+
+

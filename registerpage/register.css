@@ -1,0 +1,491 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.register-lay-out {
+  width: 1280px;
+  height: 1056px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 200px 100px;
+  gap: 10px;
+}
+.register-lay-out::after {
+  content: "";
+  z-index: -1;
+  background-image: url(../img/image\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 60%;
+}
+.register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 60px;
+  gap: 60px;
+  width: 1080px;
+  height: 656px;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.image-palceholder {
+  width: 450px;
+  height: 536px;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  background-image: url(../img/Image\ Placeholder2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.register-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 450px;
+  height: 536px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.head-subhead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 450px;
+  height: 146px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.headline {
+  width: 450px;
+  height: 50px;
+  font-family: "Abdoullah Ashgar EL-kharef";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2d2d2d;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.subhead {
+  width: 450px;
+  height: 76px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  color: #1f1249;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 450px;
+  height: 350px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.frame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 450px;
+  height: 270px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 12px;
+  width: 450px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  position: relative;
+}
+
+.usererror{
+  display: inline-block;
+  background-color: transparent;
+  position: absolute;
+  top: 90%;
+  bottom: 20%;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 29px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.user {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: center;
+}
+.user img {
+  padding: 0;
+  margin: 0%;
+  display: inline-block;
+}
+.driver {
+  width: 1px;
+  height: 20px;
+  background: #dbe3ff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+input,
+input:focus {
+  width: 369px;
+  height: 44px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #3b3b3b;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: #3b3b3b;
+}
+.create-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+  width: 450px;
+  height: 60px;
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  border: none;
+  cursor: pointer;
+}
+.button-text {
+  width: 118px;
+  height: 22px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.nameError{
+  display: inline-block;
+  color: #d9534f;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  display: none;
+
+}
+.emailError{
+  display: inline-block;
+  color: #d9534f;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  display: none;
+
+}
+.passwordError{
+  display: inline-block;
+  color: #d9534f;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  display: none;
+
+}
+.passwordConfirmError{
+  display: inline-block;
+  color: #d9534f;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  display: none;
+
+}
+.checkRequirements{
+  color: #d9534f;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+  text-align: center;
+  display: none;
+  
+}
+
+
+
+/* m e d i a   q u e r y     o f    R e g i s t e r       s e c t i o n */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .register-lay-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    width: 375px;
+    height: 931px;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 40px;
+    width: 375px;
+    height: 931px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .image-palceholder {
+    width: 315px;
+    height: 315px;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .register-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    width: 315px;
+    flex: none;
+  }
+  .head-subhead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 315px;
+    height: 106px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 38px;
+    font-family: "Abdoullah Ashgar EL-kharef";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2d2d2d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .subhead{
+   text-align: center;
+    width: 315px;
+height: 52px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #1F1249;
+flex: none;
+order: 1;
+flex-grow: 0;
+  }
+  form{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 315px;
+height: 350px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+  }
+  .frame-container{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 315px;
+height: 270px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+  .frame{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 20px;
+gap: 12px;
+width: 315px;
+height: 60px;
+background: #FFFFFF;
+border: 1px solid #DBE3FF;
+border-radius: 10px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+  }
+  input{
+    width: 234px;
+height: 44px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+display: flex;
+align-items: center;
+color: #3B3B3B;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+  }
+  .create-account{
+    padding: 0px 50px;
+gap: 12px;
+width: 315px;
+height: 60px;
+background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+box-shadow: 0px 6px 18px #9CADF2;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+  
+}
